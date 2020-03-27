@@ -1,0 +1,8 @@
+fbq('track', 'AddToCart', {
+  contents: [
+    { id: 'SKU-1', quantity: 2 }
+  ],
+  content_type: 'product',
+  value: 100,
+  currency: 'TRY',
+})
