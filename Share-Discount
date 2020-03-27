@@ -1,0 +1,3 @@
+<script>
+fbq('trackCustom', 'ShareDiscount', {promotion: 'share_discount_30%'});
+</script>
