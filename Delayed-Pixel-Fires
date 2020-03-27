@@ -1,0 +1,6 @@
+<script>
+var seconds = 3;
+setTimeout(function() {
+  fbq('track', 'Lead');
+}, seconds * 1000);
+</script>
