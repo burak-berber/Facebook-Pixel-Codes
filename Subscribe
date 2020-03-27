@@ -1,0 +1,16 @@
+<script>
+var window.dataLayer = window.dataLayer || []
+
+dataLayer.push({
+'event' : 'SubscriptionStarted',                         //used for creating GTM trigger
+customDataFB : 
+     {  'predicted_ltv' : '500',
+        'value' : 200,
+        'currency' : 'USD'
+       }
+})
+</script>
+-------------------------------------------------------------------------------------------------------------------------------------------
+<script>
+fbq('track', 'Subscribe', {{customDataFacebook}} );
+</script>
