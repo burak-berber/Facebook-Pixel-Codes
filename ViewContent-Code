@@ -1,0 +1,18 @@
+<script>
+fbq('track', 'ViewContent', {
+  contents: [
+    { id: 'Product-ID', 
+    quantity: 1 }
+  ],
+  content_type: 'product',
+  value: 50, 
+  currency: 'TRY',
+})
+</script>
+
+OR
+
+fbq('track', 'ViewContent', {
+  content_ids: ['SKU-1'],
+  content_type: 'product',
+})
