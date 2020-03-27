@@ -1,0 +1,3 @@
+<script>
+fbq('trackCustom','Internal Link Clicks',{'name':{{Click URL}},'page':{{Page URL}}})
+</script>
