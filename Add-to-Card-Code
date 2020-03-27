@@ -1,8 +1,31 @@
-fbq('track', 'AddToCart', {
-  contents: [
-    { id: 'SKU-1', quantity: 2 }
-  ],
-  content_type: 'product',
-  value: 100,
-  currency: 'TRY',
-})
+<button id="addToCartButton">Add To Cart</button>
+
+<script type="text/javascript">
+  var button = document.getElementById('addToCartButton');
+  button.addEventListener(
+    'click', 
+    function() { 
+      fbq('track', 'AddToCart', {
+        content_name: 'Really Fast Running Shoes', 
+        content_category: 'Apparel & Accessories > Shoes',
+        content_ids: ['1234'],
+        content_type: 'product',
+        value: 4.99,
+        currency: 'USD' 
+      });          
+    },
+    false
+  );
+</script>
+
+or You can use Google Tag Manager,
+<script>
+      fbq('track', 'AddToCart', {
+        content_name: 'Really Fast Running Shoes', 
+        content_category: 'Apparel & Accessories > Shoes',
+        content_ids: ['1234'],
+        content_type: 'product',
+        value: 4.99,
+        currency: 'TRY' 
+      });          
+</script>
