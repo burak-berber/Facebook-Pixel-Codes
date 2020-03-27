@@ -1,0 +1,21 @@
+<script>
+//Insert the URL Format for search URL ////////
+var searchFormat = '/search/{SEARCHQUERY}'             //Enter YOUR URL Format
+
+var reg = new RegExp(searchFormat.replace('{SEARCHQUERY}','([^\?|\/|&]+)'))
+var search_string = decodeURIComponent(reg.exec(location.href)[1])
+
+
+var customDataFB =  { 'search_string' : search_string, 
+        'content_ids : ['SKU#1' , 'SKU#2' ],
+        'contents' : [ {'id' :'SKU#1',                              // Items returned after search
+                          'price' : 30 }
+                          {'id' : 'SKU#2',
+                            'price' : 40],
+        'value' : 70,
+        'currency' : 'USD'
+          }
+
+fbq('track', 'Search', customDataFB );
+
+</script>
