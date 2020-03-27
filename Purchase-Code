@@ -1,0 +1,9 @@
+fbq('track', 'Purchase', {
+  contents: [
+    { id: 'SKU-1', quantity: 2 },
+    { id: 'SKU-2', quantity: 1 },
+  ],
+  content_type: 'product',
+  value: 130,
+  currency: 'TRY',
+})
