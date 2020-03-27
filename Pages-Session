@@ -1,0 +1,11 @@
+<script>
+dgTrack.pageviewCount(
+{ cookie_name: 'pv_per_sess',
+  callback : function(obj){
+  // Insert your event tracking code here : facebook custom event example //    fbq('trackCustom','PageviewsPerSession',{
+       'Pages Viewed': obj['cookieValueNew'],
+       'page':location.pathname
+})
+}
+})
+</script>
