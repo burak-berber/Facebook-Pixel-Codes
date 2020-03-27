@@ -1,0 +1,4 @@
+<script>
+fbq('trackCustom','Link Clicks',{'name':{{Click URL}},'page':{{Page URL}}})
+</script>
+This is for only Gtm entegration.
